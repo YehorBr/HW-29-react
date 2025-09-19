@@ -1,5 +1,4 @@
 import { Container } from 'components/Container/Container';
-import { IoMdSearch } from 'react-icons/io';
 import { Icon, SearchWrapper } from './SearchContact.styled';
 import { useDispatch } from 'react-redux';
 import { filterContacts } from '../../redux/action';
