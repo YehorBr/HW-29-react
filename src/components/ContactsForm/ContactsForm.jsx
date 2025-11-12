@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addContacts } from '../../redux/action';
+import { addContact } from '../../redux/operation';
 import { getContacts } from '../../redux/selectors';
 import { FormContainer, Backcdrop, Modal, CloseBtn } from './ContactsForm.styled';
 import { IoCloseSharp } from 'react-icons/io5';
@@ -16,20 +16,20 @@ export const ContactsForm = ({onOpenModal}) => {
     const newContact = {
       id: Date.now(),
       name: form.elements.name.value,
-      tel: form.elements.tel.value,
+      phone: form.elements.tel.value,
     };
 
     const isExist = contacts.some(contact => {
-      return contact.tel === newContact.tel;
+      return contact.phone === newContact.phone;
     });
 
     if (isExist) {
-      alert(`Контакт з номером ${newContact.tel} вже існує`);
+      alert(`Контакт з номером ${newContact.phone} вже існує`);
       form.reset();
       return;
     }
 
-    dispatch(addContacts(newContact));
+    dispatch(addContact(newContact));
 
     form.reset();
 

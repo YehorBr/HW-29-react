@@ -11,10 +11,10 @@ export const ContactsList = () => {
   const contacts = useSelector(getContacts);
   const filterText = useSelector(getFilter)
 
-  const filteredContacts = contacts.filter((contact) => {
-    return contact.name.toLowerCase().includes(filterText.toLowerCase()) || contact.tel.includes(filterText)
-  })
-
+  const filteredContacts = contacts.filter(contact => 
+  contact.name.toLowerCase().includes(filterText.toLowerCase()) ||
+  contact.phone.includes(filterText)
+);
   return (
     <>
       <Container>
