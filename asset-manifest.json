@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/HW-29-react/static/js/main.d08008b3.js",
+    "main.js": "/HW-29-react/static/js/main.d729b0e1.js",
     "static/media/pexels-kampus-8353782.jpg": "/HW-29-react/static/media/pexels-kampus-8353782.ae41036b3cbabb484510.jpg",
     "index.html": "/HW-29-react/index.html",
-    "main.d08008b3.js.map": "/HW-29-react/static/js/main.d08008b3.js.map"
+    "main.d729b0e1.js.map": "/HW-29-react/static/js/main.d729b0e1.js.map"
   },
   "entrypoints": [
-    "static/js/main.d08008b3.js"
+    "static/js/main.d729b0e1.js"
   ]
 }
