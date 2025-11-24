@@ -1,5 +1,3 @@
-import { devToolsEnhancer } from "@redux-devtools/extension";
-import { legacy_createStore as createStore } from "redux";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { contactReducer } from "./contactSlice";
 import { filterReducer } from "./filterSlice";
